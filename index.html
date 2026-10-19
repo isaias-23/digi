@@ -1,24 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Yo soy Isaias, tú no lo se se </title>
-         <style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web de Isaías</title>
+    <style>
 
-     body{font-family: Calibri;font-size: 35px;background-color: cadetblue;margin:0;text-align:center;}
-        a{text-decoration: none;tex}
+        body {
+            background-color: #2b5c66;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #ffffff;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
 
 
 
+        .main-container {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.05);
+
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+        }
+
+
+        .welcome-text {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+
+        .welcome-text a {
+            color: #e066ff; /* Morado llamativo */
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 2px dashed #e066ff;
+            transition: color 0.3s;
+        }
+        .welcome-text a:hover {
+            color: #00ffcc;
+            border-bottom-color: #00ffcc;
+        }
+
+
+        .menu-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+
+        .menu-links a {
+            display: block;
+            padding: 12px 20px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+
+        .Cv a { border-left: 5px solid #00ffcc; }
+        .by a { border-left: 5px solid #ff9900; }
+        .tp a { border-left: 5px solid #ffd700; }
+
+
+        .menu-links p a:hover {
+            background: #ffffff;
+            color: #2b5c66;
+            transform: translateY(-2px);
+        }
+
+
+        .music-section {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .music-title {
+            font-size: 1rem;
+            color: #e066ff;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .spotify-widget {
+            border-radius: 12px;
+            width: 100%;
+            max-width: 350px;
+            height: 350px;
+        }
     </style>
+</head>
+<body>
 
-    <p > Hola soy isaias,estoy trabajando en mi pagina web, mientras tranto. Disfruta de este episodio de los
-        <a href="https://www.youtube.com/watch?v=Fg_KxhW8-PY"target="_blank">Loney tones</a>
+<div class="main-container">
 
-    <p><a href= "https://isaias-23.github.io/digi/cv/index.html" target="_blank">Curriculum Vitae</a></p>
-    <p><a href="c1/index.html">The backyardigans</a></p>
-    <p><a href="c1/Tortilla%20de%20patatas.html">tortilla de patatas </a></p>
+    <p class="welcome-text">
+        Hola soy isaías, estoy trabajando en mi página web, mientras tanto.
+        Disfruta de este episodio de los
+        <a href="https://www.youtube.com/watch?v=Fg_KxhW8-PY" target="_blank">Looney Tunes</a>.
+    </p>
 
+
+    <div class="menu-links">
+        <p class="Cv"><a href="https://isaias-23.github.io/digi/cv/index.html" target="_blank">Curriculum Vitae</a></p>
+        <p class="by"><a href="c1/index.html">The Backyardigans</a></p>
+        <p class="tp"><a href="c1/Tortilla%20de%20patatas.html">Tortilla de patatas</a></p>
+    </div>
+
+
+    <div class="music-section">
+        <p class="music-title">También pueden escuchar musiquita de la nena de Barcelona</p>
+        <iframe class="spotify-widget" src="https://open.spotify.com/embed/playlist/37i9dQZF1E4v6TOZwprEYW?utm_source=generator&si=c7ced76701084856" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+</div>
 
 </body>
 </html>
