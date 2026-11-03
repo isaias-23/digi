@@ -7,125 +7,141 @@
     <style>
 
         body {
-            background-color: #2b5c66;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            color: #ffffff;
-            margin: 0;
-            padding: 40px 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f3f6;
+            color: #333;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
             min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
         }
 
 
-
-        .main-container {
-            max-width: 600px;
+        .algo {
+            background-color: #ffffff;
+            max-width: 650px;
             width: 100%;
-            text-align: center;
-            background: rgba(255, 255, 255, 0.05);
-
+            padding: 30px;
             border-radius: 16px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            text-align: center;
         }
 
 
-        .welcome-text {
-            font-size: 1.25rem;
+        .texto de bienvenida {
+            font-size: 1.1rem;
             line-height: 1.6;
+            color: #4a5568;
             margin-bottom: 25px;
         }
 
-
-        .welcome-text a {
-            color: #e066ff; /* Morado llamativo */
-            text-decoration: none;
-            font-weight: bold;
-            border-bottom: 2px dashed #e066ff;
-            transition: color 0.3s;
-        }
-        .welcome-text a:hover {
-            color: #00ffcc;
-            border-bottom-color: #00ffcc;
+        h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-top: 0;
+            margin-bottom: 5px;
         }
 
+        h3 {
+            color: #7f8c8d;
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
 
-        .menu-links {
+        .UD1 {
             display: flex;
-            flex-direction: column;
-            gap: 15px;
-            margin: 30px 0;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 35px;
+            padding: 0;
         }
 
-
-        .menu-links a {
-            display: block;
-            padding: 12px 20px;
-            color: #ffffff;
+        .UD1 span a {
+            display: inline-block;
+            background-color: #eef2f7;
+            color: #34495e;
             text-decoration: none;
-            font-weight: 600;
+            padding: 8px 16px;
             border-radius: 8px;
-            transition: all 0.3s ease;
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
         }
 
-
-        .Cv a { border-left: 5px solid #00ffcc; }
-        .by a { border-left: 5px solid #ff9900; }
-        .tp a { border-left: 5px solid #ffd700; }
-
-
-        .menu-links p a:hover {
-            background: #ffffff;
-            color: #2b5c66;
+        .UD1 span a:hover {
+            background-color: #3498db;
+            color: #ffffff;
             transform: translateY(-2px);
         }
 
 
-        .music-section {
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        .texto de bienvenida a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 2px dashed #e74c3c;
         }
 
-        .music-title {
-            font-size: 1rem;
-            color: #e066ff;
-            margin-bottom: 15px;
-            font-weight: bold;
+        .texto de bienvenida a:hover {
+            color: #c0392b;
+            border-bottom-style: solid;
         }
+
 
         .spotify-widget {
+            border-top: 1px solid #edf2f7;
+            padding-top: 25px;
+            margin-top: 25px;
+        }
+
+        .titulo de musica {
+            font-size: 1rem;
+            color: #718096;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        .sp {
             border-radius: 12px;
             width: 100%;
-            max-width: 350px;
-            height: 350px;
+            height: 152px;
         }
     </style>
 </head>
 <body>
 
-<div class="main-container">
+<div class="algo">
+    <header>
+        <p class="texto de bienvenida">
+            Hola soy isaías, estoy trabajando en mi página web, mientras tanto.
+            Disfruta de este episodio de los
+            <a href="https://www.youtube.com/watch?v=Fg_KxhW8-PY" target="_blank">Looney Tunes</a>.
+        </p>
+    </header>
 
-    <p class="welcome-text">
-        Hola soy isaías, estoy trabajando en mi página web, mientras tanto.
-        Disfruta de este episodio de los
-        <a href="https://www.youtube.com/watch?v=Fg_KxhW8-PY" target="_blank">Looney Tunes</a>.
-    </p>
+    <main>
+        <h2>Unidad 1</h2>
+        <h3>Introducción a CSS</h3>
 
+        <p class="UD1">
+            <span><a href="/Nueva%20carpeta/Ejercicio%201.html">Ejercicio 1</a></span>
+            <span><a href="/Nueva%20carpeta/Ejercicio%202.html">Ejercicio 2</a></span>
+            <span><a href="/Nueva%20carpeta/instagram%20de%20iker%20xd.html">Instagram de Iker</a></span>
+            <span><a href="c1/Tortilla%20de%20patatas.html">Tortilla de patatas</a></span>
+            <span><a href="/Nueva%20carpeta/Ejerciciohotel.html">Hotel</a></span>
+            <span><a href="c1/index.html">The Backyardigans</a></span>
+            <span><a href="https://isaias-23.github.io/digi/cv/index.html" target="_blank">Curriculum Vitae</a></span>
+        </p>
+    </main>
 
-    <div class="menu-links">
-        <p class="Cv"><a href="https://isaias-23.github.io/digi/cv/index.html" target="_blank">Curriculum Vitae</a></p>
-        <p class="by"><a href="c1/index.html">The Backyardigans</a></p>
-        <p class="tp"><a href="c1/Tortilla%20de%20patatas.html">Tortilla de patatas</a></p>
-    </div>
-
-
-    <div class="music-section">
-        <p class="music-title">También pueden escuchar musiquita de la nena de Barcelona</p>
-        <iframe class="spotify-widget" src="https://open.spotify.com/embed/playlist/37i9dQZF1E4v6TOZwprEYW?utm_source=generator&si=c7ced76701084856" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <div class="spotify-widget">
+        <p class="titulo de musica">También pueden escuchar musiquita de la nena de Barcelona</p>
+        <iframe class="sp" src="https://open.spotify.com/embed/playlist/37i9dQZF1E4v6TOZwprEYW?utm_source=generator&si=c7ced76701084856" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
 </div>
 
