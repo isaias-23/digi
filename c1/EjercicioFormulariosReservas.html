@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <form action="" >
+        <select name="cliente" id="cliente">
+            <option value="1">Ana Fernandez Gómez</option>
+            <option value="2">Maria Anders</option>
+            <option value="3">Thomas Hardy</option>
+        </select>
+        <br>
+        <input type="submit" value="Buscar">
+    </form>
+    <form action="cancelar.php" id="f1" method="post"></form>
+    <form action="cancelar.php" id="f2" method="post"></form>
+    <form action="modificar.php" id="f_modificar" method="post"></form>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Fecha de Reserva</th>
+                <th>Fecha de Entrada</th>
+                <th>Fecha de Salida</th>
+                <th>Cancelar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="">1016</a></td>
+                <td>2024-05-07</td>
+                <td>2024-09-05</td>
+                <td>2024-09-07</td>
+                <td><input form="f1" type="hidden" name="codigoReserva" value="1016"><input form="f1" type="submit" value="Cancelar"></td>
+            </tr>
+            <tr>
+                <td> <input form="f2" type="hidden" name="codigoReserva" value="1048"><a href="">1048</a></td>
+                <td>2024-05-16</td>
+                <td>2024-07-11</td>
+                <td>2024-07-14</td>
+                <td><input form="f2"  type="submit" value="Cancelar"></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Reserva</th>
+                <th>Tipo de Habitación</th>
+                <th>Cantidad de Habitaciones reservadas</th>
+                <th>Modificar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> <input form="f_modificar" type="hidden" name="codigoReserva" value="1016">1016</td>
+                <td>Doble con balcón</td>
+                <td><input form="f_modificar" type="text" name="cantHabitaciones"></td>
+                <td><input form="f_modificar" type="reset" value="Cancelar"><input form="f_modificar" type="submit" value="Aceptar"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
